@@ -1,0 +1,127 @@
+.text-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+
+
+.hero-container {
+  background-image: url(../assets/HeroShark.jpg);
+  color: #fff;
+  height: 100vh;
+
+  /* hero image styling */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.content-container {
+  background-color: #dbd56e;
+  height: 600px;
+}
+
+.accordion-container {
+  background-color: #5f80d2;
+  color: #fff;
+  height: 600px;
+}
+
+.accordion {
+    background-color: #eee; /* Light grey background */
+    color: #444; /* Dark grey text */
+    cursor: pointer; /* Changes the mouse cursor to a pointer */
+    padding: 18px; /* Top and bottom padding */
+    width: 100%; /* Full width */
+    border: none; /* No border */
+    text-align: left; /* Text aligned to the left */
+    outline: none; /* No outline */
+    font-size: 15px; /* Font size */
+    transition: 0.4s; /* Adds animation when clicked */
+  }
+  
+  /* Change background color when moving over button */
+  .accordion:hover {
+    background-color: #ccc; /* Darker grey */
+  }
+  
+  /* Style to add for the active state (optional) */
+  .accordion.active {
+    background-color: #ccc; /* Darker grey */
+    color: white; /* White text */
+  }
+  
+
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  color: #444;
+  display: none;
+  overflow: hidden;
+}
+
+.footer-container {
+  background-color: #f2efea;
+  position: relative; /* Keep footer in the normal flow of the document */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align children horizontally */
+  justify-content: center; /* Center-align children vertically */
+  padding: 10px; /* Padding around the content */
+  overflow: hidden;
+  height: 100vh;
+}
+
+.footer {
+  text-align: center; /* Center-align text */
+  color: #444; /* Dark grey text */
+}
+
+.footer-links {
+  list-style-type: none; /* Remove bullet points from the list */
+  margin: 10px 0; /* Add margin above and below the list */
+  text-align: center; /* Center-align list items */
+}
+
+.footer-links li {
+  display: inline; /* Display list items in a line */
+  margin-right: 10px; /* Right margin for spacing between links */
+}
+
+.footer-links a {
+  color: #444; /* Dark grey link color */
+  text-decoration: none; /* No underline on links */
+  font-size: 14px; /* Font size for links */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Underline on hover for visual feedback */
+}
+
+/* Footer Google Map */
+.google-map {
+  margin-top: 20px; /* Margin above the map */
+  width: 100%; /* Full width */
+  max-width: 600px; /* Maximum width */
+  height: 450px; /* Height of the map */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 600px) {
+  .google-map iframe {
+    width: 100%; /* Full width on small screens */
+    height: 300px; /* Adjusted height for small screens */
+  }
+}
+
+
